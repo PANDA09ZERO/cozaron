@@ -1,0 +1,74 @@
+/*para el corazón*/
+body {
+    margin: 0;
+    overflow: hidden; 
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    z-index: -1; 
+    background-color: #d299996d;
+}
+
+/*para la propuesta*/
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.4em;
+    color: #9b5cbba1;
+    position: absolute; 
+    top: 30%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 10; 
+    text-align: center;
+}
+/*para los botones*/
+#button-container {
+    position: relative;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    top: 500px;
+}
+
+button#yes-button {
+    background-color: #e045c385;
+    color: white;
+    z-index: 10;
+}
+
+button#no-button {
+    background-color: #3cd6e77f;
+    color: white;
+    margin-left: 20px;
+}
+/*animacion botones*/
+button:hover {
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+button#no-button:hover {
+    background-color: #3cd6e7;
+}
+
+button#yes-button:hover {
+    background-color: #e045c3;
+}
